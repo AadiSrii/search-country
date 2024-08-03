@@ -13,6 +13,8 @@ app.use(cors());
 
 app.use(express.json());
 
+mongoose.connect('mo')
+
 app.get("/", (req, res) => {
   try {
     res.send("This is the  Home Page ");
